@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Fira+Sans:wght@400;500;600;700&family=Lato:ital,wght@0,100;1,100&family=Montserrat:ital,wght@0,400;0,800;1,100;1,200;1,600&family=Mukta:wght@300&family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:ital,wght@1,100;1,500;1,700&family=Roboto:wght@400;700;900&family=Rubik+Moonrocks&family=Smooch&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.logo img{
+    width: 100%;
+    max-width: 100px;
+    z-index: 999;
+}
+/* header section start*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: all ease 0.5s;
+    z-index: 999999;
+}
+header ul li{
+    display: inline-block;
+    margin: 15px;
+}
+header ul li a{
+    color:  #ffff;
+    transition: all ease 0.5s;
+    font-weight: 700;
+}
+header:hover{
+    background-color: #ffff;
+}
+header:hover a{
+    color:black;
+}
+.mega-menu{
+    position: absolute;
+    left: 15%;
+    top: 70px;
+    width: 100%;
+    background-color: #ffff;
+    padding: 20px 100px;
+    border-radius: 5px;
+    display: none;
+}
+header ul li:hover .mega-menu{
+    display: block;
+    width: 100%;
+}
+.mega-menu ul li{
+    width: 100%;
+    margin-bottom: 5px;
+    display: block;
+}
+.mega-menu ul li a{
+    color: black;
+}
+.mega-menu ul li i{
+    font-size: 18px;
+    opacity: 0;
+    transition: all ease 0.5s;
+    
+}
+.mega-menu ul li a:hover i{
+    opacity: 1;
+}
+
+/* header section finish */
+/* conten-section-start */
+.content{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.content .item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 0.8s;
+}
+.content .item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+.content .item:hover{
+    width: 200%;
+}
+.content .item .text{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    color:#fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: all ease 0.9s 0.15s;
+    margin:40px;
+
+}
+.content .item:hover .text{
+    opacity: 1;
+    bottom: 70px;
+}
+.content .item .text h3{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 25px ;
+}
+.content .item .text a{
+    color: #fff;
+    font-size: 20px;
+}
+.content .item .text a span{
+    font-size: 20px;
+    display: inline-block;
+    transition: all ease 2s;
+}
+.content .item .text a:hover span{
+    transform: rotate(360deg);
+}
+
+/* conten-section-finish */
